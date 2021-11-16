@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 
-import { PrimeNgModulesModule } from '../../primeNgModules/primeNgModules.module';
+import { PrimeNgModule } from '../../primeNgModules/primeNgModules.module';
 
 import { MenuComponent } from './menu/menu.component';
 
@@ -14,7 +14,7 @@ import { MenuComponent } from './menu/menu.component';
     MenuComponent
   ],
   imports: [
-    PrimeNgModulesModule
+    PrimeNgModule
   ]
 })
 export class SharedModule { }
