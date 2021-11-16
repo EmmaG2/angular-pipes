@@ -11,4 +11,4 @@ import { MenubarModule } from 'primeng/menubar';
     MenubarModule
   ]
 })
-export class PrimeNgModulesModule { }
+export class PrimeNgModule { }
