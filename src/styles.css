@@ -4,6 +4,10 @@ html, body {
     font-family: var(--font-family);
 }
 
-.text-layout {
+.text-layout, p {
     color: var(--text-color);
+}
+
+.secondary-text {
+    color: var(--text-color-secondary);
 }
