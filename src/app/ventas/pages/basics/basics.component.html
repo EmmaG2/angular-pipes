@@ -26,3 +26,31 @@
     </div>
     
 </div>
+
+<div>
+    <h1 class="text-layout">Date - Fecha</h1>
+    <p class="secondary-text">
+        Pipe para mostrar la fecha
+    </p>
+</div>
+
+<div class="grid">
+    <div class="col-6">
+        <p-card header="Date Pipe"
+                subheader=" el pepe">
+            <ul>
+                <li></li>
+            </ul>
+        </p-card>
+    </div>
+    <div class="col-6">
+        <p-card header="Date Pipe"
+                subheader=" el pepe">
+            <ul>
+                <li> {{ fecha | date: 'dd/MM/yyyy' }}
+                <li> {{ fecha | date: 'h:mm a' }}
+                <li> {{ fecha | date: 'long' }}
+            </ul>
+        </p-card>
+    </div>
+</div>
