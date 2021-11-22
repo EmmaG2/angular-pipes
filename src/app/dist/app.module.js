@@ -15,8 +15,10 @@ var ventas_module_1 = require("./ventas/ventas.module");
 var app_component_1 = require("./app.component");
 // cambiar el locale de la app
 var es_MX_1 = require("@angular/common/locales/es-MX");
+var fr_1 = require("@angular/common/locales/fr");
 var common_1 = require("@angular/common");
 common_1.registerLocaleData(es_MX_1["default"]);
+common_1.registerLocaleData(fr_1["default"]);
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -32,7 +34,9 @@ var AppModule = /** @class */ (function () {
                 ventas_module_1.VentasModule
             ],
             providers: [
-                { provide: core_1.LOCALE_ID, useValue: 'es-MX' }
+                { provide: core_1.LOCALE_ID,
+                    useValue: 'es-MX'
+                }
             ],
             bootstrap: [app_component_1.AppComponent]
         })
