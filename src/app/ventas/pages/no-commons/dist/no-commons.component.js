@@ -10,14 +10,20 @@ exports.NoCommonsComponent = void 0;
 var core_1 = require("@angular/core");
 var NoCommonsComponent = /** @class */ (function () {
     function NoCommonsComponent() {
+        this.nombre = 'Fernando';
+        this.genero = 'femenino';
+        this.invitacionMap = {
+            'masculino': 'invitarlo',
+            'femenino': 'invitarla'
+        };
     }
     NoCommonsComponent = __decorate([
         core_1.Component({
             selector: 'app-no-commons',
-            templateUrl: './no-commons.component.html',
-            styles: []
+            templateUrl: './no-commons.component.html'
         })
     ], NoCommonsComponent);
     return NoCommonsComponent;
 }());
 exports.NoCommonsComponent = NoCommonsComponent;
+;
