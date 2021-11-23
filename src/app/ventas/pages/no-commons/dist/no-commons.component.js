@@ -10,13 +10,36 @@ exports.NoCommonsComponent = void 0;
 var core_1 = require("@angular/core");
 var NoCommonsComponent = /** @class */ (function () {
     function NoCommonsComponent() {
-        this.nombre = 'Fernando';
-        this.genero = 'femenino';
+        //*i18nSelect
+        this.nombre = 'Emmanuel';
+        this.genero = 'masculino';
         this.invitacionMap = {
-            'masculino': 'invitarlo',
-            'femenino': 'invitarla'
+            'masculino': 'tenerlo',
+            'femenino': 'tenerla'
+        };
+        //*i18nPlural
+        this.clientes = [
+            'k',
+            'hola',
+            'juan',
+            'xd',
+            'hola2'
+        ];
+        this.clientesMap = {
+            '=0': 'No tenemos ningún cliente en sala de espera',
+            '=1': 'Tenemos 1 cliente en sala de espera',
+            'other': 'Tenemos # clientes en sala de espera'
         };
     }
+    NoCommonsComponent.prototype.cambiarPersona = function () {
+        this.nombre = 'Diana';
+        this.genero = 'femenino';
+    };
+    ;
+    NoCommonsComponent.prototype.borrarPersona = function () {
+        this.clientes.pop();
+    };
+    ;
     NoCommonsComponent = __decorate([
         core_1.Component({
             selector: 'app-no-commons',
