@@ -1,5 +1,6 @@
 import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { RoutingModule } from './routes/routing/routing.module';
 import { SharedModule } from './ventas/shared/shared.module';
@@ -20,6 +21,7 @@ registerLocaleData( localeFr );
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     RoutingModule,
     SharedModule,
     VentasModule

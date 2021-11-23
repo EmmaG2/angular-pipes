@@ -9,6 +9,7 @@ exports.__esModule = true;
 exports.AppModule = void 0;
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
+var animations_1 = require("@angular/platform-browser/animations");
 var routing_module_1 = require("./routes/routing/routing.module");
 var shared_module_1 = require("./ventas/shared/shared.module");
 var ventas_module_1 = require("./ventas/ventas.module");
@@ -29,6 +30,7 @@ var AppModule = /** @class */ (function () {
             ],
             imports: [
                 platform_browser_1.BrowserModule,
+                animations_1.BrowserAnimationsModule,
                 routing_module_1.RoutingModule,
                 shared_module_1.SharedModule,
                 ventas_module_1.VentasModule
