@@ -14,10 +14,16 @@
         </p-card>
     </div>
     <div class="col-4">
+        <p-card header="Ventas Brutas"
+                subheader="de dos años">
+        <i class="pi pi-dollar"></i>
+        <span>{{ (ventasNetas + 20000000) | currency:'':'':'1.2-2' }}</span>
+        </p-card>
+    </div>
+    <div class="col-4">
         <p-card [header]="header2"
                 [subheader]="subheader2">
-        <i class="pi pi-dollar"></i>
-        <span>{{ porcentaje }}</span>
+        <span>{{ porcentaje | percent:'1.2-4' }}</span>
         </p-card>
     </div>
 </div>

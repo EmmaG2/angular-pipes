@@ -15,7 +15,7 @@ var NumbersComponent = /** @class */ (function () {
         this.header2 = 'Porcentaje';
         this.subheader2 = 'de ventas';
         this.ventasNetas = 2589402.585959;
-        this.porcentaje = 0.98;
+        this.porcentaje = 0.4856;
     }
     NumbersComponent = __decorate([
         core_1.Component({

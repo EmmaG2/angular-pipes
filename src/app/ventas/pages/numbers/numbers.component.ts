@@ -12,5 +12,5 @@ export class NumbersComponent {
   subheader2: string = 'de ventas';
 
   ventasNetas: number = 2589402.585959;
-  porcentaje: number = 0.98;
+  porcentaje: number = 0.4856;
 }
