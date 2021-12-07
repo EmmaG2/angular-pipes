@@ -6,13 +6,12 @@
 </div>
 
 <div class="grid">
-    <div class="md:col-6 sm:col-9">
+    <div class="col md:col-6">
         <p-fieldset legend="i18nSelect Pipe" [toggleable]="true">
-            <span>
+            <p>
                 Saludos {{ nombre }}, es un placer
                 {{ genero | i18nSelect:invitacionMap }} aquí
-            </span>
-            <br><br>
+            </p>
             <button pButton
                     type="button"
                     label="Cambiar Persona"
@@ -24,20 +23,40 @@
         </p-fieldset>
     </div>
     <br>
-    <div class="md:col-6 sm:col-9">
+    <div class="col md:col-6">
         <p-fieldset legend="i18nPlural Pipe" [toggleable]="true">
-            <span>
+            <p>
                 {{ clientes.length| i18nPlural:clientesMap}}
-            </span>
-            <br><br>
+            </p>
             <button pButton
                     type="button"
-                    label="Borrar Cliente"
+                label="Borrar Cliente"
                     class="p-button-danger p-button-outlined"
                     icon="pi pi-spin pi-spinner"
                     iconPos="left"
                     (click)="borrarPersona()">
             </button>
+        </p-fieldset>
+    </div>
+    <div class="col md:col-6">
+        <p-fieldset legend="Slice Pipe" [toggleable]="true">
+            <h4>Normal</h4>
+            <p> {{ clientes | slice:0 }} </p>
+            <h4>Slice:0:4</h4>
+            <p> {{ clientes | slice:0:4}} </p>
+        </p-fieldset>
+    </div>
+    <div class="col md:col-6">
+        <p-fieldset legend="Keyvalue Pipe" [toggleable]="true">
+            <ul>
+                <li *ngFor="let item of persona | keyvalue"> {{ item.key }}: {{ item.value }}
+            </ul>
+        </p-fieldset>
+    </div>
+    <div class="col md:col-6">
+        <p-fieldset legend="Async Pipe" [toggleable]="true">
+            <pre *ngIf="!(valorPromesa | async)">Resolviendo Promesa</pre>
+            <pre>{{ valorPromesa | async}}</pre>
         </p-fieldset>
     </div>
 </div>
