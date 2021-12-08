@@ -6,21 +6,21 @@
 </div>
 
 <div class="grid">
-    <div class="col-4">
+    <div class="col md:col-6">
         <p-card [header]="header"
                 [subheader]="subheader">
         <i class="pi pi-dollar"></i>
         <span>{{ ventasNetas | number:'1.2-2':'fr' }}</span>
         </p-card>
     </div>
-    <div class="col-4">
+    <div class="col md:col-6">
         <p-card header="Ventas Brutas"
                 subheader="de dos años">
         <i class="pi pi-dollar"></i>
-        <span>{{ (ventasNetas + 20000000) | currency:'':'':'1.2-2' }}</span>
+        <span>{{ (ventasNetas + 2000000) | currency:'':'':'1.2-2' }}</span>
         </p-card>
     </div>
-    <div class="col-4">
+    <div class="col md:col-6">
         <p-card [header]="header2"
                 [subheader]="subheader2">
         <span>{{ porcentaje | percent:'1.2-4' }}</span>
