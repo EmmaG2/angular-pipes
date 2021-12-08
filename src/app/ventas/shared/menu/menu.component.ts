@@ -31,26 +31,14 @@ export class MenuComponent implements OnInit{
               label: 'No Muy Comunes',
               icon: 'pi pi-align-left',
               routerLink: 'no-commons',
-            },
-            {
-              label: 'Básicos',
-              icon: 'pi pi-star',
-              routerLink: 'basics'
-            },
-            {
-              label: 'Orden',
-              icon: 'pi pi-align-justify',
-              routerLink: 'order'
             }
           ]
         },
         {
           label: 'Pipes Personalizados',
           icon: 'pi pi-pencil',
-          routerLink: 'pipes-personalizados',
-          items: [
-            // TODO: Hacer los componentes respectivos a los pipes personalizados
-          ]
+          routerLink: 'order',
+
         }
       ];
 
