@@ -10,8 +10,10 @@ exports.PrimeNgModule = void 0;
 var core_1 = require("@angular/core");
 var button_1 = require("primeng/button");
 var card_1 = require("primeng/card");
-var menubar_1 = require("primeng/menubar");
 var fieldset_1 = require("primeng/fieldset");
+var menubar_1 = require("primeng/menubar");
+var table_1 = require("primeng/table");
+var toolbar_1 = require("primeng/toolbar");
 var PrimeNgModule = /** @class */ (function () {
     function PrimeNgModule() {
     }
@@ -21,7 +23,9 @@ var PrimeNgModule = /** @class */ (function () {
                 button_1.ButtonModule,
                 card_1.CardModule,
                 menubar_1.MenubarModule,
-                fieldset_1.FieldsetModule
+                fieldset_1.FieldsetModule,
+                toolbar_1.ToolbarModule,
+                table_1.TableModule
             ]
         })
     ], PrimeNgModule);
