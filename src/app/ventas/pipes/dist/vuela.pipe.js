@@ -6,24 +6,20 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 exports.__esModule = true;
-exports.MayusculasPipe = void 0;
+exports.VuelaPipe = void 0;
 var core_1 = require("@angular/core");
-var MayusculasPipe = /** @class */ (function () {
-    function MayusculasPipe() {
+var VuelaPipe = /** @class */ (function () {
+    function VuelaPipe() {
     }
-    MayusculasPipe.prototype.transform = function (value, validation) {
-        if (validation === void 0) { validation = true; }
-        return (validation)
-            ? value.toUpperCase()
-            : value.toLowerCase();
+    VuelaPipe.prototype.transform = function (vuela) {
+        return (vuela) ? 'Si vuela' : 'No vuela';
     };
     ;
-    MayusculasPipe = __decorate([
+    VuelaPipe = __decorate([
         core_1.Pipe({
-            name: 'mayus'
+            name: 'vuela'
         })
-    ], MayusculasPipe);
-    return MayusculasPipe;
+    ], VuelaPipe);
+    return VuelaPipe;
 }());
-exports.MayusculasPipe = MayusculasPipe;
-;
+exports.VuelaPipe = VuelaPipe;
